@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GITS test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>             
+  <div id="app" class="container">
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <ul>
+        <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+        <li><a href="#" class="button_badge" data_badge="5"><i class="fa fa-bell"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </div>
+    <!-- SIDE NAVIGATION BAR -->
+    <div class="sidenav">
+      <div class="profile">
+        <div class="avatar"></div>
+        <div v-bind:class="clsCaption">Dhiya Ulhaq</div>
+        <div v-bind:class="clsDropCaption">Art Director</div>
+      </div>
+      <div class="sidemenu">
+        <a href="#"><i class="material-icons">dashboard</i>Dashboard</a>
+        <a href="#"><i class="fa fa-bar-chart"></i>Graphic</a>
+        <button class="dropbtn"><i class="material-icons">receipt</i>Forms
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Forms 1</a>
+          <a href="#">Forms 2</a>
+          <a href="#">Forms 3</a>
+        </div>                
+        <a href="#"><i class="material-icons">grid_on</i>Table</a>
+      </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <div class="row">
+        <div class="top_box one">
+          <p v-bind:class="clsNumberLeft">50</p>
+          <p v-bind:class="clsTextRight">Login Hit</p>
+        </div>
+        <div class="top_box two">
+          <p v-bind:class="clsNumberLeft">34</p>
+          <p v-bind:class="clsTextRight">Sales</p>
+        </div>
+        <div class="top_box three">
+          <p v-bind:class="clsNumberLeft">59</p>
+          <p v-bind:class="clsTextRight">Top Categories</p>
+        </div>
+      </div>
+      <!-- CHART -->
+      <div class="chartclass">
+        <div class="linechart">
+          <canvas id="myLineChart"></canvas>
+        </div>
+        <div class="doughnutchart">
+          <canvas id="myDoughnutChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VUE -->
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+  <!-- CHART -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/javascript.js"></script>
+
+</body>
+</html>
